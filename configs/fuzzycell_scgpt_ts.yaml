@@ -1,0 +1,27 @@
+# FuzzyCell + scGPT on Tabula Sapiens
+backbone: scgpt
+d_cell: 512
+d_type: 768
+d_logic: 256
+k: 64
+n_semantic_types: 128
+s: 10.0
+alpha: 0.6
+theta_init: 0.1
+optimizer: adamw
+lr: 5.0e-5
+lr_backbone: 5.0e-6
+weight_decay: 1.0e-2
+batch_size: 256
+max_epochs: 50
+early_stopping_patience: 5
+margin: 0.2
+lambda_type: 1.0
+lambda_onto: 0.5
+dataset: tabula_sapiens
+n_hvg: 2000
+n_runs: 5
+seed: 42
+tbox_path: data/tbox/cl_tbox.json
+type_embeddings_path: data/embeddings/type_embeddings.pt
+output_dir: results/ts_scgpt/

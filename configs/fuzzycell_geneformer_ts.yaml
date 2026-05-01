@@ -1,0 +1,11 @@
+# FuzzyCell + Geneformer on Tabula Sapiens
+backbone: geneformer
+d_cell: 256
+d_type: 768
+d_logic: 256
+k: 64
+n_semantic_types: 128
+s: 10.0
+alpha: 0.6
+dataset: tabula_sapiens
+output_dir: results/ts_geneformer/
